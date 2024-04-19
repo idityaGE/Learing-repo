@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit</title>
+    <style>
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            margin: 0 auto;
+        }
+
+        textarea {
+            font-size: 16px;
+            font-weight: 700;
+            height: 30px;
+            width: 50%;
+            margin-bottom: 10px;
+        }
+
+        input {
+            height: 30px;
+            width: 50%;
+            margin-bottom: 10px;
+        }
+
+        button {
+            height: 30px;
+            width: 50%;
+            border-radius: 30px;
+            background-color: #4CAF50;
+            color: white;
+            padding: 8px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Edit Username</h1>
+    <h2>Email : <%= user.email %>
+    </h2>
+    <form action="/users/<%= user.id %>?_method=PATCH" method="post">
+        <textarea name="username" id="" cols="5" rows="1"><%= user.username %></textarea>
+        <textarea name="email" id="" cols="5" rows="1"><%= user.email %></textarea>
+        <input type="text" name="password" placeholder="password">
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add User</title>
+    <style>
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            margin: 0 auto;
+        }
+
+        textarea {
+            font-size: 16px;
+            font-weight: 700;
+            height: 30px;
+            width: 50%;
+            margin-bottom: 10px;
+        }
+
+        input {
+            height: 30px;
+            width: 50%;
+            margin-bottom: 10px;
+        }
+
+        button {
+            height: 30px;
+            width: 50%;
+            border-radius: 30px;
+            background-color: #4CAF50;
+            color: white;
+            padding: 8px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Add New User</h1>
+    <form action="/users/add" method="post" >
+        <input type="text" name="username" placeholder="username">
+        <input type="text" name="email" placeholder="email">
+        <input type="text" name="password" placeholder="password">
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 8px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>The total numbers of user are : <%= count %></h1>
+    <form action="/users" method="get" >
+        <button>
+            show all users
+        </button>
+    </form>
+    <form action="/users/add" method="get" >
+        <button>
+            Add user
+        </button>
+    </form>
+</body>
+</html>

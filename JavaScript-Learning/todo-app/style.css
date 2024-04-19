@@ -1,0 +1,17 @@
+body{
+    margin: 50px;
+}
+
+li{
+    padding: 8px;
+}
+
+input{
+    margin-right: 10px;
+}
+.rem{
+    cursor: pointer;
+    margin-left: 20px;
+    border: none;
+    background-color: white;
+}

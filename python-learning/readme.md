@@ -22,6 +22,7 @@
 - [Python Elif](#python-elif)
 - [Python Loops](#python-loops)
 - [Python Functions](#python-functions)
+- [Python Classes and Objects](#python-classes-and-objects)
 
 
 ### Python Inner Working
@@ -541,13 +542,3 @@ print(p1.getage()) # 25
 p1.setage(26)
 print(p1.getage()) # 26
 ```
-
-
-
-
-
-
-
-
-
-

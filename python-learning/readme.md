@@ -472,6 +472,76 @@ def my_function(**kid): # **kwargs is used to pass a keyworded, variable-length 
 my_function(fname = 'John', lname = 'Doe') # His last name is Doe
 ```
 
+### Python Classes and Objects
+- Classes are used to create objects.
+- Objects are instances of a class.
+- Objects can store data and methods.
+- example:
+```python
+class Person:
+    def __init__(self, name, age): # __init__() function is used to initialize the object
+        self.name = name # self parameter is a reference to the current instance of the class
+        self.age = age
+    def myfunc(self):
+        print('Hello my name is ' + self.name)
+p1 = Person('John', 25)
+print(p1.name) # John
+print(p1.age) # 25
+p1.myfunc() # Hello my name is John
+```
+more examples:
+```python
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+    def myfunc(self):
+        print('Hello my name is ' + self.name)
+class Student(Person): # Student class inherits the properties and methods of the Person class
+    pass # pass keyword is used when you do not want to add any other properties or methods
+p1 = Student('John', 25)
+print(p1.name) # John
+print(p1.age) # 25
+p1.myfunc() # Hello my name is John
+```
+```python
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+    def myfunc(self):
+        print('Hello my name is ' + self.name)
+class Student(Person):
+    def __init__(self, name, age, year):
+        super().__init__(name, age) # super() function is used to call the __init__() method of the parent class
+        self.graduationyear = year
+    def welcome(self):
+        print('Welcome', self.name, 'to the class of', self.graduationyear)
+p1 = Student('John', 25, 2021)
+print(p1.name) # John
+print(p1.age) # 25
+p1.myfunc() # Hello my name is John
+print(p1.graduationyear) # 2021
+p1.welcome() # Welcome John to the class of 2021
+```
+#### getter and setter methods:
+```python
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+    def myfunc(self):
+        print('Hello my name is ' + self.name)
+    def getage(self):
+        return self.age
+    def setage(self, age):
+        self.age = age
+p1 = Person('John', 25)
+print(p1.getage()) # 25
+p1.setage(26)
+print(p1.getage()) # 26
+```
+
 
 
 

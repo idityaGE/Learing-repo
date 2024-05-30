@@ -1,6 +1,29 @@
 ## Python 🐍
 ##### Python is a high-level, interpreted, interactive and object-oriented scripting language. Python is designed to be highly readable. It uses English keywords frequently where as other languages use punctuation, and it has fewer syntactical constructions than other languages.
 
+### Readme Contents
+- [Python Introduction](#python-introduction)
+- [Python Inner Working](#python-inner-working)
+- [Python Installation](#python-installation)
+- [Python in Shell](#python-in-shell)
+- [Python in File](#python-in-file)
+- [Python Comments](#python-comments)
+- [Python Variables](#python-variables)
+- [Python Data Types](#python-data-types)
+- [Python Operators](#python-operators)
+- [Python Strings](#python-strings)
+- [Python Lists](#python-lists)
+- [Python Tuples](#python-tuples)
+- [Python Dictionaries](#python-dictionaries)
+- [Python Sets](#python-sets)
+- [Python Booleans](#python-booleans)
+- [Python Indentation](#python-indentation)
+- [Python If...Else](#python-ifelse)
+- [Python Elif](#python-elif)
+- [Python Loops](#python-loops)
+- [Python Functions](#python-functions)
+
+
 ### Python Inner Working
 - Python is an interpreted language, meaning it runs line by line.
 - Python is an object-oriented language, meaning it treats everything as an object.

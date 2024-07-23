@@ -409,6 +409,10 @@ for x in ('apple', 'banana', 'cherry'): # iterate over a tuple
 for x in {'name': 'John', 'age': 25}: # iterate over a dictionary
     print(x) # name age line by line
 ```
+```python
+for x in {'name':"adii", 'age': 19}.value():
+    print(x)
+```
 
 #### Python While Loop
 - While loop is used to iterate over a sequence or a block of code multiple times.

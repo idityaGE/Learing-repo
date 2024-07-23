@@ -410,7 +410,7 @@ for x in {'name': 'John', 'age': 25}: # iterate over a dictionary
     print(x) # name age line by line
 ```
 ```python
-for x in {'name':"adii", 'age': 19}.value():
+for x in {'name':"adii", 'age': 19}.values():
     print(x)
 ```
 

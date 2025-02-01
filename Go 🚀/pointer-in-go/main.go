@@ -37,7 +37,7 @@ func main() {
 
 	**e = 30
 	fmt.Println("c:", c)
-	fmt.Println("d:", d)
+	fmt.Println("d:", d) 
 	fmt.Println("e:", e)
 	fmt.Println("*d:", *d)
 	fmt.Println("**e:", **e)

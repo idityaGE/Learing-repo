@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"log"
 	"net/http"
 	// "rest-api/helper" // a Diffrent package
 )
@@ -23,7 +24,7 @@ func main() {
 	http.HandleFunc("/task", showTasks)
 
 	// this should be below the http.HandleFunc
-	http.ListenAndServe(":8080", nil)
+	log.Fatal(http.ListenAndServe(":8080", nil))
 
 }
 
